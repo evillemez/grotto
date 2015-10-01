@@ -1,0 +1,1 @@
+This repo does nothing useful. These are just first experiments with both `otto` and `golang`.
