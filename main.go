@@ -1,9 +1,13 @@
 package main
 
-import "github.com/evillemez/grotto/hello"
+import (
+	"fmt"
+	"log"
+	"net/http"
+)
 
 func main() {
-	foo()
-
-	hello.SayHello()
+	fmt.Println("Starting...")
+	log.Fatal(http.ListenAndServe("127.0.0.1:8080", NewRouter()))
+	fmt.Println("Exited.")
 }
