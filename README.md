@@ -24,6 +24,7 @@ TODO:
     * transform/sanitize map
     * convert map to struct https://github.com/mitchellh/mapstructure
     * persist structs to db
+* validation on maps maybe, or structs: https://github.com/asaskevich/govalidator
 
 * contemplate partial model updates & partial views
   * write a map transformer library, end result would be similar to JMS Serializer Groups, but applying transformation on intermediary map representation, not structs directly
@@ -39,6 +40,7 @@ TODO:
           SetPathHandler("some.path", handlers.MyCustomPathHandler)
         * var SearchIndexView = maps.NewMapView().
           Include(ApiView).
+          AddRequiredPath("id").
           AddExcludedPath("different.nested.path").
           SetPathHandler("another.path", handlers.SomeHandler)
       * using a view
