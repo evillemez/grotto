@@ -9,7 +9,7 @@ TODO:
 * create some structs for models
 * persist models to db:
   * mongo w/ mgo: https://github.com/go-mgo/mgo/tree/v2
-  * postres w/ ...
+  * postgres w/ ...
     * https://github.com/go-xorm/xorm
     * https://github.com/jinzhu/gorm
     * https://github.com/go-gorp/gorp
