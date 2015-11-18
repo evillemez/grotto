@@ -25,6 +25,8 @@ TODO:
     * convert map to struct https://github.com/mitchellh/mapstructure
     * persist structs to db
 * validation on maps maybe, or structs: https://github.com/asaskevich/govalidator
+* write unit tests w/ help from: https://github.com/stretchr/testify
+* integration tests w/ help from: https://golang.org/pkg/net/http/httptest/
 
 * contemplate partial model updates & partial views
   * write a map transformer library, end result would be similar to JMS Serializer Groups, but applying transformation on intermediary map representation, not structs directly
